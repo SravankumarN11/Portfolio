@@ -1,0 +1,37 @@
+/* Default styles */
+
+/* For laptops and desktops */
+@media only screen and (min-width: 1025px) {
+    /* Styles for laptops and desktops */
+    
+   
+}
+
+
+/* For smartphones (portrait and landscape) */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    /* Styles for smartphones */
+    
+}
+
+
+
+
+/* For tablets, iPads (portrait and landscape) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Styles for tablets */
+   
+
+
+
+}
+
+
+
+
+
+
+/* For smartwatches */
+@media only screen and (max-width: 319px) {
+    /* Styles for smartwatches */
+}

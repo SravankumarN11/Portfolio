@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Password Verification</title>
+<style>
+  
+  @media only screen and (min-width: 1025px) {
+    /* Styles for laptops and desktops */
+    body{
+      min-height:50vh;
+    width:90%;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(./images/butterfly.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    }
+    .center{
+      margin-top: 200px;
+      padding-left: 45%;
+    
+    }
+
+
+
+  }
+/* For smartphones (portrait and landscape) */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    /* Styles for smartphones */
+    body{
+      background-color: aqua;
+    }
+    .center{
+      padding-left: 20%;
+      margin-top: 50%;
+    }
+}
+
+
+
+
+/* For tablets, iPads (portrait and landscape) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Styles for tablets */
+    body{
+      background-color: aqua;
+    }
+    .center{
+      padding-left: 35%;
+      margin-top: 50%;
+    }
+   
+
+
+
+}
+@media only screen and (max-width: 319px) {
+    /* Styles for smartwatches */
+    body{
+      background-color:orange;
+    }
+    h2{
+      padding-top: 21px;
+      font-size: 10px;
+    }
+    input{
+      font-size: 11px;
+      margin-bottom: 10px;
+
+    }
+
+
+
+
+}
+</style>
+
+
+
+
+</head>
+<body>
+  <div class="center">
+
+<h2>Enter Password</h2>
+<input type="password" id="passwordInput">
+<button onclick="checkPassword()">Submit</button>
+</div>
+<script>
+function checkPassword() {
+  var password = document.getElementById("passwordInput").value;
+  // Compare the entered password with the correct password
+  if (password === "486011") {
+    // Redirect to index.html if the password is correct
+    window.location.href = "HomePage.html";
+  } else {
+    //alert("Incorrect password. Please try again.");
+    alert("Cheppina Password Kottu Owl-Eyes");
+  }
+}
+</script>
+
+</body>
+</html>

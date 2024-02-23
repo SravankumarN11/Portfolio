@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Website</title>
+  <link rel="stylesheet" href="./css/Homepage.css">
+  <link rel="stylesheet" href="./css/AllDevices.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&family=Old+Standard+TT:ital,wght@0,700;1,400&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+  
+
+  <script src="https://kit.fontawesome.com/bdb9c44a6d.js" crossorigin="anonymous"></script>
+  <style>
+  :root{
+    --bg-color:#081b29;
+    --second-bg-color:#112e42;
+    --text-color:#ededed;
+    --main-color:#00abf0;
+
+  }
+  body{
+    margin: 0;
+    padding: 0;
+   background-color: var(--bg-color);
+    
+  }
+
+  
+/* Default styles */
+
+/* For laptops and desktops */
+@media only screen and (min-width: 1025px) {
+    /* Styles for laptops and desktops */
+    .logo{
+  
+    font-size:40px;
+    color: white;
+    padding-left:50px;
+    font-family: 'Nanum Myeongjo', serif;
+    font-family: 'Old Standard TT', serif;
+    font-family: 'Tangerine', cursive; 
+}
+ .logo:hover:hover{
+  color: aqua;
+}
+.pl{
+  padding-left: 50%;
+}
+.nav-item{
+  padding-left: 5px;
+}
+.nav-link{
+  color:#ffff ;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.nav-link:hover{
+  color: #00abf0;
+  text-decoration:underline;
+
+}
+.pd-flex{
+  display: flex;
+  /*justify-content: space-between;*/
+}
+.heading1-style{
+  color: #ffff;
+  padding:230px 0px 0px 100px;
+}
+.heading2-style{
+  color:aqua;
+  padding:0px  0px 0px 100px;
+}
+.paragraph{
+  color: #ffff;
+  padding-left: 100px;
+}
+.btn{
+  color: #ededed;
+  transition: .5s;
+  background-color: var(--bg-color);
+}
+.btnpl{
+  padding-left: 100px;
+
+}
+.btnpl .btn{
+  margin-right:19px;
+}
+
+.icons-pl{
+  padding-left: 100px;
+  padding-top:21px;
+}
+.icons{
+  font-size: 25px;
+  padding-left: 16px;
+  color: #ededed;
+}
+.icons:hover{
+  color: #00abf0;
+}
+.image-padding{
+  padding-left: 40%;
+  padding-top:230px;
+}
+.h-w{
+  border-radius: 50%;
+  border: 3px solid aqua;
+  height:250px;
+  width:250px;
+}
+/*About Section*/
+.about-h1{
+  color: #ededed;
+  padding-top: 250px;
+  padding-bottom: 21px;
+}
+.h-w-1{
+  border-radius: 50%;
+  border:2px solid black;
+  height:200px;
+  width:200px;
+  
+}
+/*Education Section*/
+.abouteducation-h1{
+  color:#00abf0;
+  padding-top: 200px;
+  padding-bottom: 21px;
+}
+/*.vertical-line {
+    border-left: 1px solid white;
+    height: 200px;
+  }
+*/
+.box-border{
+  border-radius: 21px;
+  width:30%;
+  height:fit-content;
+  border: 2px solid aquamarine;
+
+ 
+  
+}
+.box-border:hover{
+    transform: scale(1.03);
+}
+
+
+.boxes-flex{
+  display: flex;
+  justify-content: space-between;
+  gap:50px;
+}
+.box-border-plr{
+  padding-left: 50px;
+  padding-right: 100px;
+}
+a{
+  text-decoration: none;
+}
+.box-border h1{
+    color: aqua;
+    font-size:21px;
+    text-align: center;
+    padding-top: 15px;
+}
+.box-border p{
+  color: #ededed;
+  font-size: 16px;
+  text-align: center;
+
+}
+/*Skills Section*/
+.codingskills-flex{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.codingskills-h1{
+  color:#00abf0;
+ /* text-align: center;*/
+  font-size: 33px;
+
+}
+.codingskills-box{
+  /*border: 2px solid aquamarine;*/
+  border-radius: 21px;
+  height: 500px;
+  width: 25%;
+}
+.line-border{
+  margin-top: 2%;
+  border-radius: 21px;
+  border:1px solid black;
+  width:95%;
+ height:12px;
+  background-image: linear-gradient(to right, aqua 75%, white 25%);
+}
+.line-border1{
+  margin-top: 2%;
+  border-radius: 21px;
+  border:1px solid black;
+  width:95%;
+ height:12px;
+  background-image: linear-gradient(to right, aqua 50%, white 50%);
+}
+.skills-text{
+  color: #ededed;
+  margin-bottom: 0;
+}
+
+.line-border-flex{
+  display: flex;
+  gap:5px;
+}
+
+.percentage{
+  color: #ededed;
+}
+
+
+}
+
+/*--------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------*/
+
+
+/*End of Desktops Laptop Section*/
+
+
+
+/* For smartphones (portrait and landscape) */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    /* Styles for smartphones */
+    .logo{
+  
+  font-size:40px;
+  /*color: white;*/
+  color: aqua;
+  padding-left:25px;
+  font-family: 'Nanum Myeongjo', serif;
+  font-family: 'Old Standard TT', serif;
+  font-family: 'Tangerine', cursive; 
+}
+.all-devices-color{
+  background-color:#ededed;
+  font-size: 11px;
+}
+.pl{
+  padding-left: 10%;
+}
+.nav-item{
+  padding-left: 0px;
+}
+.nav-link{
+  color:#ffff ;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.nav-link:hover{
+  color: #00abf0;
+  text-decoration:underline;
+
+}
+.pd-flex{
+  display: flex;
+  /*justify-content: space-between;*/
+}
+.heading1-style{
+  color: #ffff;
+  font-size: 21px;
+  padding:200px 0px 0px 25px;
+}
+
+.heading2-style{
+  color:aqua;
+  padding:0px  0px 0px 25px;
+}
+
+.paragraph{
+  color: #ffff;
+  font-size: 8px;
+  padding-left: 25px;
+}
+.btn{
+  color: #ededed;
+  transition: .5s;
+  background-color: var(--bg-color);
+}
+.btnpl{
+  padding-left: 25px;
+
+}
+.alldevices-fontsize{
+  font-size: 9px;
+}
+.btnpl .btn{
+  margin-right:2px;
+}
+.icons-pl{
+  padding-left: 25px;
+  padding-top:11px;
+}
+.icons{
+  font-size: 21px;
+  padding-left: 8px;
+  color: #ededed;
+}
+.icons:hover{
+  color: #00abf0;
+}
+.image-padding{
+  padding-left: 15%;
+  padding-top:210px;
+
+}
+.h-w{
+  border-radius: 50%;
+  border: 3px solid aqua;
+  height:125px;
+  width:125px;
+}
+/*About Section*/
+.about-h1{
+  color: #ededed;
+  padding-top: 400px;
+  padding-bottom: 11px;
+}
+.h-w-1{
+  border-radius: 50%;
+  border:2px solid black;
+  height:125px;
+  width:125px;
+  
+}
+/*Education Section*/
+.abouteducation-h1{
+  color:#00abf0;
+  padding-top: 200px;
+  padding-bottom: 21px;
+}
+.box-border{
+  border-radius: 11px;
+  width:75%;
+  height:fit-content;
+  border: 2px solid aquamarine;
+
+ 
+  
+}
+.box-border:hover{
+    transform: scale(1.03);
+}
+
+
+.boxes-flex{
+  display: flex;
+  flex-direction: column;
+  gap:21px;
+    
+
+}
+.box-border-plr{
+  margin-left: 85px;
+  margin-right: 10px;
+
+}
+a{
+  text-decoration: none;
+}
+.box-border a h1{
+    color: aqua;
+    font-size:16px;
+    text-align: center;
+    padding-top: 10px;
+}
+.box-border p{
+  color: #ededed;
+  font-size: 11px;
+  text-align: center;
+
+}
+/*Skills Section*/
+.codingskills-flex{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-top: 75%;
+  padding-bottom: 10%;
+  padding-left: 6%;
+}
+.codingskills-h1{
+  color:#00abf0;
+ /* text-align: center;*/
+  font-size: 21px;
+
+}
+.codingskills-box{
+  /*border: 2px solid aquamarine;*/
+  border-radius: 21px;
+  /*height:400px;*/
+  height: max-content;
+  width: 80%;
+}
+.line-border{
+  margin-top: 2%;
+  border-radius: 21px;
+  border:1px solid black;
+  width:95%;
+ height:12px;
+  background-image: linear-gradient(to right, aqua 75%, white 25%);
+}
+.line-border1{
+  margin-top: 2%;
+  border-radius: 21px;
+  border:1px solid black;
+  width:95%;
+ height:12px;
+  background-image: linear-gradient(to right, aqua 50%, white 50%);
+}
+.skills-text{
+  color: #ededed;
+  margin-bottom: 0;
+}
+
+.line-border-flex{
+  display: flex;
+  gap:5px;
+}
+
+.percentage{
+  color: #ededed;
+}
+.competetive-padding-top{
+  margin-top: 8%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+}
+
+/*End of smartphone section */
+
+
+/* For tablets, iPads (portrait and landscape) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Styles for tablets */
+    .logo{
+  
+  font-size:50px;
+  /*color: white;*/
+  color: aqua;
+  padding-left:25px;
+  font-family: 'Nanum Myeongjo', serif;
+  font-family: 'Old Standard TT', serif;
+  font-family: 'Tangerine', cursive; 
+}
+.all-devices-color{
+  background-color:#ededed;
+  font-size: 21px;
+}
+.pl{
+  padding-left: 5%;
+}
+.nav-item{
+  padding-left: 0px;
+}
+.nav-link{
+  color:#ffff ;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.nav-link:hover{
+  color: #00abf0;
+  text-decoration:underline;
+
+}
+.pd-flex{
+  display: flex;
+  /*justify-content: space-between;*/
+}
+.heading1-style{
+  color: #ffff;
+  padding:230px 0px 0px 50px;
+}
+.heading2-style{
+  color:aqua;
+  padding:0px  0px 0px 50px;
+}
+.paragraph{
+  color: #ffff;
+  padding-left: 50px;
+}
+.btn{
+  color: #ededed;
+  transition: .5s;
+  background-color: var(--bg-color);
+}
+.btnpl{
+  padding-left: 50px;
+
+}
+.btnpl .btn{
+  margin-right:19px;
+}
+
+.icons-pl{
+  padding-left: 50px;
+  padding-top:21px;
+}
+.icons{
+  font-size: 25px;
+  padding-left: 16px;
+  color: #ededed;
+}
+.icons:hover{
+  color: #00abf0;
+}
+.image-padding{
+  padding-left: 20%;
+  padding-top:230px;
+}
+.h-w{
+  border-radius: 50%;
+  border: 3px solid aqua;
+  height:250px;
+  width:250px;
+}
+
+/*About Section*/
+.about-h1{
+  color: #ededed;
+  padding-top: 500px;
+  padding-bottom: 21px;
+}
+.h-w-1{
+  border-radius: 50%;
+  border:2px solid black;
+  height:200px;
+  width:200px;
+  
+}
+/*Education Section*/
+.abouteducation-h1{
+  color:#00abf0;
+  padding-top: 200px;
+  padding-bottom: 21px;
+}
+
+.box-border{
+  border-radius: 11px;
+  width:150%;
+  height:fit-content;
+  border: 2px solid aquamarine;
+
+ 
+  
+}
+.box-border:hover{
+    transform: scale(1.03);
+}
+
+
+.boxes-flex{
+  display: flex;
+  justify-content: space-between;
+  overflow-x: scroll;
+  gap:45px;
+}
+/*.box-border-plr{
+  padding-left: 50px;
+  padding-right: 100px;
+}*/
+a{
+  text-decoration: none;
+}
+.box-border h1{
+    color: aqua;
+    font-size:15px;
+    text-align: center;
+    padding-top: 15px;
+}
+.box-border p{
+  color: #ededed;
+  font-size: 9px;
+  text-align: center;
+
+}
+
+
+/*Skills Section*/
+.codingskills-flex{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.codingskills-h1{
+  color:#00abf0;
+ /* text-align: center;*/
+  font-size: 33px;
+
+}
+.codingskills-box{
+  /*border: 2px solid aquamarine;*/
+  border-radius: 21px;
+  height: 500px;
+  width: 40%;
+}
+.line-border{
+  margin-top: 2%;
+  border-radius: 21px;
+  border:1px solid black;
+  width:95%;
+ height:12px;
+  background-image: linear-gradient(to right, aqua 75%, white 25%);
+}
+.line-border1{
+  margin-top: 2%;
+  border-radius: 21px;
+  border:1px solid black;
+  width:95%;
+ height:12px;
+  background-image: linear-gradient(to right, aqua 50%, white 50%);
+}
+.skills-text{
+  color: #ededed;
+  margin-bottom: 0;
+}
+
+.line-border-flex{
+  display: flex;
+  gap:5px;
+}
+
+.percentage{
+  color: #ededed;
+}
+
+
+
+}
+
+
+/*End of Tabs section*/
+
+
+/*-----------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------*/
+
+@media only screen and (max-width: 319px) {
+    /* Styles for smartwatches */
+    .logo{
+  
+  font-size:21px;
+  /*color: white;*/
+  color: aqua;
+  padding-left:10px;
+  font-family: 'Nanum Myeongjo', serif;
+  font-family: 'Old Standard TT', serif;
+  font-family: 'Tangerine', cursive; 
+}
+.all-devices-color{
+  background-color:#ededed;
+  font-size: 7px;
+}
+.pl{
+  padding-left: 6%;
+}
+.nav-item{
+  padding-left: 0px;
+}
+.nav-link{
+  color:#ffff ;
+  font-size: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.nav-link:hover{
+  color: #00abf0;
+  text-decoration:underline;
+
+}
+/*.smart-none{
+  display: none;
+}
+*/
+
+.pd-flex{
+  display: flex;
+  /*justify-content: space-between;*/
+}
+.heading1-style{
+  color: #ffff;
+  font-size: 11px;
+  padding:60px 0px 0px 10px;
+}
+.heading2-style{
+  font-size: 10px;
+  color:aqua;
+  padding:0px  0px 0px 10px;
+}
+.paragraph{
+  color: #ffff;
+  font-size: 6px;
+  padding-left: 10px;
+  margin-bottom: 0px;
+}
+.btn{
+  border-radius: 5px;
+  padding:2px 5px;
+  color: #ededed;
+  transition: .5s;
+  background-color: var(--bg-color);
+}
+.alldevices-fontsize{
+  font-size: 5px;
+}
+.btnpl{
+  padding-left: 10px;
+
+}
+.btnpl .btn{
+  margin-right:0px;
+}
+
+.icons-pl{
+  padding-left: 13px;
+  padding-top:1px;
+}
+.icons{
+  padding-left: 5px;
+  font-size: 8px;
+  color: #ededed;
+}
+.icons:hover{
+  color: #00abf0;
+}
+.image-padding{
+ /*padding-left: 40%;*/
+  padding-top:60px;
+}
+.h-w{
+  border-radius: 50%;
+  border: 1px solid aqua;
+  height:50px;
+  width:50px;
+}
+
+/*About Section*/
+.about-h1{
+  font-size: 11px;
+  color: #ededed;
+  padding-top: 50px;
+  padding-bottom: 5px;
+}
+.h-w-1{
+  border-radius: 50%;
+  border:1px solid black;
+  height:50px;
+  width:50px;
+  
+}
+.smartwatches-p{
+  font-size: 6px;
+}
+/*Education Section*/
+.abouteducation-h1{
+  font-size: 11px;
+  color:#00abf0;
+  padding-top: 50px;
+  padding-bottom: 5px;
+}
+
+.box-border{
+  border-radius: 6px;
+  width:150%;
+  height:fit-content;
+  border: 1px solid aquamarine;
+
+ 
+  
+}
+.box-border:hover{
+    transform:none;
+}
+
+
+.boxes-flex{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap:5px;
+}
+.box-border-plr{
+  padding-left: 35px;
+ padding-right: 60px;
+}
+a{
+  text-decoration: none;
+}
+.box-border h1{
+    color: aqua;
+    font-size:7px;
+    text-align: center;
+    padding-top: 5px;
+}
+.box-border p{
+  color: #ededed;
+  font-size: 5px;
+  text-align: center;
+
+}
+
+/*Skills Section*/
+.codingskills-flex{
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 15%;
+  padding-left: 7%;
+ /* padding-right: 5%;*/
+}
+.codingskills-h1{
+  color:#00abf0;
+ /* text-align: center;*/
+  font-size: 11px;
+
+}
+.codingskills-box{
+  /*border: 2px solid aquamarine;*/
+  /*border-radius: 21px;
+  height: 500px;*/
+  width: 95%;
+}
+.line-border{
+  margin-top: 2%;
+  border-radius: 21px;
+  border:1px solid black;
+  width:95%;
+ height:8px;
+  background-image: linear-gradient(to right, aqua 75%, white 25%);
+}
+.line-border1{
+  margin-top: 2%;
+  border-radius: 21px;
+  border:1px solid black;
+  width:95%;
+ height:8px;
+  background-image: linear-gradient(to right, aqua 50%, white 50%);
+}
+.skills-text{
+  font-size: 9px;
+  color: #ededed;
+  margin-bottom: 0;
+}
+
+.line-border-flex{
+  display: flex;
+  gap:5px;
+}
+
+.percentage{
+  font-size: 9px;
+  color: #ededed;
+}
+.competetive-padding-top{
+  margin-top: 5%;
+}
+
+
+
+
+
+
+
+}
+
+
+/*END OF SMARTWATCHES SECTION*/
+/*-------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+</style>
+
+
+</head>
+
+<body>
+
+  <!---NAVBAR SECTION-->
+
+  <nav class="navbar fixed-top navbar-expand-lg  bg-dark">
+    <div class="container-fluid">
+      <div>
+      <a class="navbar-brand logo" href="#">Sra~one</a>
+      </div>
+      <button class="navbar-toggler all-devices-color" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse pl" id="navbarTogglerDemo02">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link "  href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Aboutme" id="aboutLink">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#education" id="educationLink">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skill" id="skillLink">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+
+
+        
+        </ul>
+        
+      </div>
+    </div>
+  </nav><!--END OF NAVBAR-->
+
+  <div class="smart-none">
+
+  <!--Personal Details Section-->
+  <div class="pd-flex"> <!--Applying flex-->
+    <div >
+      <h1 class="heading1-style" >Hi,I'm Lenin</h1>
+     <!-- <marquee behavior="scroll" direction="down"> <h2 style="color:aqua;padding:0px  0px 0px 100px;">Not a Developer But I will deserve It</h2></marquee>-->
+      <h2 class="heading2-style">Developer</h2>
+      <p class="paragraph">Some Information abou my self is......</p>
+      <div class="btnpl">
+
+      <button type="button" class="btn btn-info alldevices-fontsize">Let's Talk</button>
+
+      <button type="button" class="btn btn-info alldevices-fontsize">More Info</button>
+      </div>
+      <div class="icons-pl">
+      <a href="#">  <i class="fa-brands fa-facebook icons"></i></a>
+       <a href="#"> <i class="fa-brands fa-whatsapp icons"></i></a>
+       <a href="#"> <i class="fa-brands fa-x-twitter icons"></i></a>
+       <a href="#"> <i class="fa-brands fa-telegram icons"></i></a>
+      </div>
+  
+    </div>
+    <div class="image-padding">
+      <img class="h-w" src="./images/circle.jpg">
+    </div>
+
+  </div><!--End of the Flex div-->
+
+
+ <!--About Section-->
+
+
+ <div >
+  <center><h1 class="about-h1" id="Aboutme">About kane</h1></center>
+  <center><img  class="h-w-1" src="./images/kane.jpeg"></center>
+  <center><p style="color: #ededed;font-style: italic;" class="smartwatches-p">Kane Stuart Williamson (born 8 August 1990)[1] is a New Zealand cricketer. On 27 February 2023, Williamson became the all-time leading run-scorer for New Zealand in Test cricket.[2] A right-handed batsman and an occasional off spin bowler, he is widely regarded as one of the greatest contemporary batsmen and captains New Zealand has ever produced and the greatest New Zealand batsman of all time. He captained New Zealand to victory in the 2021 ICC World Test Championship final.</p></center>
+
+  
+
+
+</div><!--END OF ABOUT SECTION-->
+
+
+
+  <!--Education Section-->
+  <div>
+    <center><h1 class="abouteducation-h1" id="education">Education</h1></center>
+    <div class="boxes-flex box-border-plr"><!--Starting boxes-flex-->
+
+     <div class="box-border">
+      <a href="#"><h1>Batch : 2019-2020</h1>
+        <p >Course : 10<sup>th</sup></p>
+        <p>School : Gnana Jyothi E.M School</p>
+        <p>CGPA : 10.0</p></a>
+
+
+        
+
+      </div><!--end of box-border-->
+
+      <!--Experience Block-->
+
+      <div class="box-border">
+      <a href="#">  <h1>Batch : 2020-2022</h1>
+        <p >Course : PUC (Intermediate) </p>
+        <p>University : RGUKT</p>
+        <p>CGPA : 9.32</p></a>
+
+
+        
+
+      </div><!--end of box-border-->
+
+
+
+      <div class="box-border">
+      <a href="#">  <h1>Batch : 2022-2026</h1>
+        <p >Course : B.tech(C.S.E)</p>
+        <p>University : RGUKT</p>
+        <p>CGPA : </p></a>
+
+
+        
+
+      </div><!--end of box-border-->
+
+
+      <div class="box-border">
+        <a href="#"><h1>Batch : 2026-2028</h1>
+        <p >Course : </p>
+        <p>University : </p>
+        <p>CGPA : </p></a>
+
+
+        
+
+      </div><!--end of box-border-->
+
+
+
+    </div><!--End Of Boxes-flex-->
+     
+
+
+    </div>
+
+    <!--End of education section-->
+
+
+
+
+    
+  <!-- Coding Skills Section-->
+  
+           
+  <div class="codingskills-flex">
+  
+    <div class="codingskills-box">
+  <h1 class="codingskills-h1" id="skill">Coding Skills</h1>
+    <p class="skills-text">HTML</p>
+  
+      <div class="line-border-flex"><!--Starting line border-flex-->
+      <div class="line-border">
+  
+      </div>
+      <div class="percentage">
+        75%
+      </div>
+  
+      </div><!--End of Line border flex-->
+  
+  
+  
+      <!--CSS-->
+      <p class="skills-text">CSS</p>
+  
+      <div class="line-border-flex"><!--Starting line border-flex-->
+      <div class="line-border">
+  
+      </div>
+      <div class="percentage">
+        75%
+      </div>
+  
+      </div><!--End of Line border flex-->
+     
+  
+      <!--Bootstrap-->
+      <p class="skills-text">Bootstrap</p>
+  
+      <div class="line-border-flex"><!--Starting line border-flex-->
+      <div class="line-border">
+  
+      </div>
+      <div class="percentage">
+        75%
+      </div>
+  
+      </div><!--End of Line border flex-->
+  
+   
+      <!--JS-->
+      <p class="skills-text">JS</p>
+  
+      <div class="line-border-flex"><!--Starting line border-flex-->
+      <div class="line-border1">
+  
+      </div>
+      <div class="percentage">
+        50%
+      </div>
+  
+      </div><!--End of Line border flex-->
+  
+  
+      <!--React-->
+      <p class="skills-text">React</p>
+  
+      <div class="line-border-flex"><!--Starting line border-flex-->
+      <div class="line-border1">
+  
+      </div>
+      <div class="percentage">
+        50%
+      </div>
+  
+      </div><!--End of Line border flex-->
+  
+      <!--DBMS-->
+  
+      <p class="skills-text">SQL</p>
+  
+      <div class="line-border-flex"><!--Starting line border-flex-->
+      <div class="line-border">
+  
+      </div>
+      <div class="percentage">
+        75%
+      </div>
+  
+      </div><!--End of Line border flex-->
+    
+  
+  
+  
+  
+  
+  
+  
+  
+     </div><!--End of codingskills-box-->
+  
+      
+  
+     <div class="codingskills-box competetive-padding-top">
+      <h1 class="codingskills-h1" >Competetive</h1>
+  
+  
+      <!--C-Language-->
+      <p class="skills-text">C-Language</p>
+  
+      <div class="line-border-flex"><!--Starting line border-flex-->
+      <div class="line-border">
+  
+      </div>
+      <div class="percentage">
+        75%
+      </div>
+  
+      </div><!--End of Line border flex-->
+  
+  
+      <p class="skills-text">Python</p>
+  
+      <div class="line-border-flex"><!--Starting line border-flex-->
+      <div class="line-border">
+  
+      </div>
+      <div class="percentage">
+        75%
+      </div>
+  
+      </div><!--End of Line border flex-->
+  
+  
+        <!--C++ with Dsa-->
+         <!--JS-->
+      <p class="skills-text">C++ with Dsa</p>
+  
+      <div class="line-border-flex"><!--Starting line border-flex-->
+      <div class="line-border1">
+  
+      </div>
+      <div class="percentage">
+        50%
+      </div>
+  
+      </div><!--End of Line border flex-->
+  
+  
+  
+      
+     
+         
+      
+     </div><!--End of codingskills-box-->
+  
+         
+  
+  
+  
+  </div><!--End of Coding skills flex-->
+  
+  </div><!--end of smart-none-->
+  </body>
+  </html>
